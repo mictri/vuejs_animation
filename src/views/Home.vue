@@ -1,27 +1,63 @@
 <template>
   <main>
-    <h1 ref="title" class="text-center text-red-400">Home</h1>
-    <p ref="paraOne" class="hero-image">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit aliquam voluptas quod!
-      Asperiores accusamus iste consequuntur cumque rerum corrupti, error commodi minima, eveniet,
-      aperiam sit magnam voluptate reprehenderit inventore praesentium? Aut necessitatibus
-      cupiditate exercitationem numquam, corporis quis magni molestias explicabo quibusdam
-      laudantium asperiores nostrum, saepe voluptatum esse impedit reiciendis eum consequatur quidem
-      totam. In velit vero labore recusandae eum? Iste. Quisquam corporis itaque, voluptatum iusto
-      similique voluptatibus iure provident fugiat alias. Sapiente, provident? Sapiente excepturi
-      fuga, doloribus voluptates eaque porro voluptas illum, in omnis natus maxime quae non aliquam
-      vero? Exercitationem repellat nobis dolores facere ipsa. Iure unde nesciunt voluptatum dolore
-      quia at veritatis odio alias nobis praesentium cupiditate iste, eum quo quas dolorum cum nisi
-      perspiciatis rem placeat? Qui!
-    </p>
+    <FadeInLeft>
+      <h1 class="text-center text-red-400 text-5xl font-bold">Home</h1>
+    </FadeInLeft>
+    <FadeInRight>
+        <swiper
+        :modules="modules"
+        :slider-per-view="3"
+        :space-between="50" 
+        :autoplay="{ delay: 3500, disableOnInteraction: false }"
+        :loop="true"
+        :pagination="{ clickable: true }" 
+        :navigation="true"
+        class="mySwiper01"
+        >
+          <swiper-slide><p><img src="https://dummyimage.com/600x400/000/fff" alt=""></p></swiper-slide>
+          <swiper-slide><p><img src="https://dummyimage.com/600x400/0011ff/fff" alt=""></p></swiper-slide>
+          <swiper-slide><p><img src="https://dummyimage.com/600x400/99b000/fff" alt=""></p></swiper-slide>
+        </swiper>
+    </FadeInRight>
+
+
+
+
+    <FadeInLeft>
     <p ref="paraTwo" class="thumbnail-image">
       <img src="https://picsum.photos/200/300" alt="alt" />
     </p>
+    </FadeInLeft>
+    <FadeInRight>
     <p ref="paraThree">
       <img src="https://picsum.photos/id/237/200/300" alt="alt" />
     </p>
-    <section ref="paraFour" class="title-wrap">Trang chủ</section>
-    <div class="about-section">
+    </FadeInRight>
+
+    <FadeInLeft>
+        <swiper
+        :modules="modules"
+        :effect="'fade'"
+        :fade-effect="{ crossFade: true }"
+        :slider-per-view="3"
+        :space-between="50" 
+        :autoplay="{ delay: 3500, disableOnInteraction: false }"
+        :loop="true"
+        :pagination="{ clickable: true }" 
+         class="mySwiper02"
+        >
+          <swiper-slide><p><img src="https://dummyimage.com/600x400/000/fff" alt=""></p></swiper-slide>
+          <swiper-slide><p><img src="https://dummyimage.com/600x400/0011ff/fff" alt=""></p></swiper-slide>
+          <swiper-slide><p><img src="https://dummyimage.com/600x400/99b000/fff" alt=""></p></swiper-slide>
+        </swiper>
+    </FadeInLeft>
+
+
+    <FadeInLeft>
+      <section ref="paraFour" class="title-wrap">Trang chủ</section>
+    </FadeInLeft>
+    <FadeInRight>
+      <div class="about-section">
       <p class="fade-element">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque harum iusto voluptates
         repudiandae nihil unde libero illo quas voluptatum vitae, sint, aut, laborum perspiciatis
@@ -39,40 +75,93 @@
         <img src="https://picsum.photos/200/300?grayscale" alt="alt" />
       </p>
     </div>
+    </FadeInRight>
+    <FadeInLeft>
+    <swiper
+    :slidesPerView="4"
+    :spaceBetween="30"
+    :centeredSlides="true"
+    :pagination="{
+      clickable: true,
+    }"
+    :breakpoints="{
+      '640': {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      '768': {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      '1024': {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
+    }"
+    :modules="modules"
+    class="mySwiper3"
+  >
+    <swiper-slide>Slide 1</swiper-slide>
+    <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
+    <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
+    <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
+  </swiper>
+</FadeInLeft>
+    <FadeInLeft>
     <p>
       <img src="https://picsum.photos/id/237/200/300" alt="alt" />
     </p>
+    </FadeInLeft>
+<FadeInRight>    
     <p>
       <img src="https://picsum.photos/id/237/200/300" alt="alt" />
-    </p>
-    <p>
+    </p></FadeInRight>
+
+    <FadeInLeft>
+      <p>
       <img src="https://picsum.photos/id/237/200/300" alt="alt" />
-    </p>
+    </p></FadeInLeft>
   </main>
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeMount } from 'vue'
-import gsap from 'gsap'
-import { CSSPlugin } from 'gsap/CSSPlugin'
-gsap.registerPlugin(CSSPlugin)
+import { onMounted } from 'vue'
+import FadeInLeft from '@/components/transitions/fadeInLeft.vue'
+import FadeInRight from '@/components/transitions/fadeInRight.vue'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Autoplay, Navigation, Pagination, EffectFade } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/autoplay'
+import 'swiper/css/effect-fade'
 
-const title = ref(null)
-const paraOne = ref(null)
-const paraTwo = ref(null)
-const paraThree = ref(null)
-const paraFour = ref(null)
+const modules = [Autoplay, Navigation, Pagination, EffectFade];
 
-onMounted(() => {
-  console.log(paraTwo.value)
-  const tl = gsap.timeline({ delay: 1, paused: true })
-  tl.from(title.value, { x: '-200', autoAlpha: 0, duration: 1 })
-  tl.from(paraOne.value, { x: '+200', autoAlpha: 0, duration: 1 })
-  tl.from(paraTwo.value, { x: '-200', autoAlpha: 0, duration: 1 })
-  tl.from(paraThree.value, { x: '+200', autoAlpha: 0, duration: 1 })
-  tl.from(paraFour.value, { x: '-200', autoAlpha: 0, duration: 1 })
-  tl.play()
-})
+
+
+// import { ref, onMounted, onBeforeMount } from 'vue'
+// import gsap from 'gsap'
+// import { CSSPlugin } from 'gsap/CSSPlugin'
+// gsap.registerPlugin(CSSPlugin)
+
+// const title = ref(null)
+// const paraOne = ref(null)
+// const paraTwo = ref(null)
+// const paraThree = ref(null)
+// const paraFour = ref(null)
+
+// onMounted(() => {
+//   console.log(paraTwo.value)
+//   const tl = gsap.timeline({ delay: 1, paused: true })
+//   tl.from(title.value, { x: '-200', autoAlpha: 0, duration: 1 })
+//   tl.from(paraOne.value, { x: '+200', autoAlpha: 0, duration: 1 })
+//   tl.from(paraTwo.value, { x: '-200', autoAlpha: 0, duration: 1 })
+//   tl.from(paraThree.value, { x: '+200', autoAlpha: 0, duration: 1 })
+//   tl.from(paraFour.value, { x: '-200', autoAlpha: 0, duration: 1 })
+//   tl.play()
+// })
 
 // import { ref, onMounted } from 'vue'
 // import gsap from 'gsap'
@@ -122,3 +211,4 @@ onMounted(() => {
 //   })
 // })
 </script>
+
