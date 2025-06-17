@@ -1,31 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+import Home from '@/views/Home.vue'
+import About from '@/views/About.vue'
+import Animations from '@/views/Animations.vue'
+import Scene from '@/views/Scene.vue'
+
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: () => import('../views/Home.vue'),
-  },
-  {
-    path: '/about',
-    name: 'about',
-    component: () => import('../views/About.vue'),
-  },
-  {
-    path: '/scene',
-    name: 'scene',
-    component: () => import('../views/Scene.vue'),
-  },
-  {
-    path: '/composables/Transitions',
-    name: 'transitions',
-    component: () => import('../views/composables/Transitions.vue'),
-  },
-  {
-    path: '/animations',
-    name: 'animations',
-    component: () => import('../views/Animations.vue'),
-  },
+  { path: '/', name: 'Home', component: Home },
+  { path: '/about', name: 'About', component: About },
+  { path: '/animations', name: 'Animations', component: Animations },
+  { path: '/scene', name: 'Scene', component: Scene },
 ]
 
 const router = createRouter({

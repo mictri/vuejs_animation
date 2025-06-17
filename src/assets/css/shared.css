@@ -1,0 +1,272 @@
+body {
+  min-width: inherit;
+  min-height: inherit;
+  max-height: 100%;
+  background: #fff;
+  color: #222222;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+body.has_nav header {
+  transform: translateY(-100%);
+  transition: 0.5s ease-out;
+}
+
+body.has_nav header.visible {
+  transform: translateY(0);
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/*=============================================
+	main
+*=============================================*/
+main {
+  clear: both;
+  width: 100%;
+  min-width: 1500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrap {
+  max-width: 1540px;
+  padding: 0px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+a:link,
+a:visited,
+a:focus {
+  color: inherit;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    min-width: auto;
+  }
+  .wrap {
+    max-width: none;
+  }
+}
+nav .active {
+  color: #e72132;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/*=============================================
+	section
+*=============================================*/
+/* -- -- */
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+/*=============================================
+	Custom
+*=============================================*/
+.btn-contact {
+  background: #e72132;
+  text-align: center;
+  display: block;
+  border-radius: 40px;
+  line-height: 23px;
+  padding: 32px 10px;
+  color: #fff !important;
+}
+@media only screen and (max-width: 768px) {
+  .btn-contact {
+    font-size: 17px;
+    border-radius: 43px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+.btn-global {
+  display: block;
+  text-align: center;
+  position: relative;
+  border-radius: 34px;
+  border: 1px solid #b9b9b9;
+  max-width: 300px;
+  padding: 18.5px 10px;
+}
+.btn-global:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 19px;
+  background-image: url(../images/arrow_red.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  transform: translateY(-50%);
+}
+
+.ttl-style {
+  line-height: 1.28;
+}
+.ttl-style span {
+  display: block;
+  font-size: 70px;
+}
+.ttl-style em {
+  padding-left: 60px;
+  position: relative;
+}
+.ttl-style em:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  background: #e72132;
+  height: 1px;
+  width: 44px;
+}
+
+.ttl-style2 {
+  line-height: 1.63;
+}
+.ttl-style2 small {
+  color: #e72132;
+  display: block;
+  font-size: 16px;
+}
+.ttl-style2 span {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-j-center {
+  justify-content: center;
+}
+
+.d-flex-a-center {
+  align-items: center;
+}
+
+.d-flex-between {
+  justify-content: space-between;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -- -- */
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+}
+
+.phone {
+  position: relative;
+  pointer-events: none;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.border-ras {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 769px) {
+  .for-sp {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .for-pc {
+    display: none;
+  }
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+  .phone {
+    pointer-events: visible;
+  }
+  .d-flex-sp {
+    display: flex;
+  }
+  .btn-global {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+  .btn-global:after {
+    right: 15px;
+    width: 20px;
+    height: 20px;
+  }
+  .ttl-style span {
+    font-size: 46px;
+  }
+  .ttl-style em {
+    padding-left: 42px;
+  }
+  .ttl-style em:before {
+    width: 28px;
+  }
+  .border-ras {
+    border-radius: 10px;
+  }
+  .ttl-style2 small {
+    font-size: 12px;
+  }
+  .ttl-style2 span {
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
+/* -- -- */
+a {
+  transition: all 0.3s;
+}
+
+a img {
+  transition: all 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  a:hover img {
+    opacity: 0.7;
+  }
+}

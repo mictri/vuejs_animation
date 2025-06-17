@@ -1,0 +1,274 @@
+/*=============================================
+	header
+*=============================================*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 48px;
+  left: 0;
+  right: 0px;
+  z-index: 100;
+  max-width: 1500px;
+  margin: 0px auto;
+}
+header .sidebar {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 11;
+}
+header .logo {
+  width: 350px;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    display: block;
+    top: 11px;
+    margin: 0px 10px;
+  }
+  header .sidebar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 9px;
+    border-radius: 34px;
+    background: #fff;
+    box-shadow: 0px 0px 29px 0px rgba(162, 162, 162, 0.27);
+  }
+  header .logo {
+    width: 247px;
+  }
+}
+#navbar {
+  box-sizing: border-box;
+  background: #fff;
+}
+#navbar nav {
+  font-size: 14px;
+  line-height: 28px;
+}
+#navbar .contact-tit {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 500;
+}
+#navbar .contact-tel {
+  font-size: 28px;
+  line-height: 49px;
+}
+#navbar .contact-tel i {
+  width: 20px;
+  margin-right: 6px;
+  display: inline-block;
+  line-height: 1;
+}
+#navbar .contact-time {
+  font-size: 11px;
+  line-height: 19px;
+}
+#navbar .btn-link {
+  width: 154px;
+}
+#navbar .btn-contact {
+  font-size: 14px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+@media only screen and (min-width: 769px) {
+  #navbar {
+    width: 756px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 0px 0px 29px 0px rgba(162, 162, 162, 0.27);
+    border-radius: 32px;
+    padding: 8px;
+  }
+  #navbar nav {
+    margin-left: 9px;
+  }
+  #navbar nav a + a {
+    margin-left: 33px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #navbar {
+    height: 0px;
+    overflow-y: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+    transition:
+      all 0.3s linear,
+      height 0s;
+    padding: 70px 30px 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #navbar nav a {
+    display: block;
+    border-bottom: 1px solid #efefef;
+    padding: 19px 0px;
+    position: relative;
+  }
+  #navbar nav a:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    background-image: url(../images/arrow_red.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+  }
+  #navbar .box-tel {
+    background: #f6f6f6;
+    border-radius: 10px;
+    margin-top: 47px;
+    box-sizing: border-box;
+    padding: 24px 28px 35px;
+    text-align: center;
+  }
+  #navbar .btn-link {
+    margin-top: 20px;
+    width: auto;
+  }
+  #navbar .btn-contact {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav--opened #navbar {
+    opacity: 1;
+    visibility: visible;
+    height: 100vh;
+  }
+  .nav--opened,
+  .nav--opened *,
+  .nav--opened *:hover,
+  .nav--opened *:focus,
+  .nav--opened *:active {
+    /*    cursor: none !important;*/
+    touch-action: none !important;
+    pointer-events: none !important;
+  }
+  .nav--opened {
+    overflow: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    touch-action: none !important;
+    pointer-events: none !important;
+  }
+  .nav--opened .hamburger,
+  .nav--opened .sidebar,
+  .nav--opened #navbar,
+  .nav--opened #navbar * {
+    touch-action: auto !important;
+    pointer-events: all !important;
+  }
+  .hamburger {
+    width: 37px;
+    height: 37px;
+    line-height: 1;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background: #e72132;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+  }
+  .hamburger.is-active {
+    background: transparent;
+  }
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background: #000;
+    width: 20px;
+    height: 2px;
+  }
+  .hamburger .hamburger-box {
+    width: 14px;
+    height: 9px;
+    display: block;
+    position: relative;
+  }
+  .hamburger .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -1px;
+  }
+  .hamburger .hamburger-inner,
+  .hamburger .hamburger-inner::before,
+  .hamburger .hamburger-inner::after {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+  }
+  .hamburger .hamburger-inner::before,
+  .hamburger .hamburger-inner::after {
+    content: '';
+    display: block;
+  }
+  .hamburger .hamburger-inner::before {
+    top: -4px;
+  }
+  .hamburger .hamburger-inner::after {
+    bottom: -4px;
+  }
+  /** Vortex Reverse **/
+  .hamburger--vortex-r .hamburger-inner {
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .hamburger--vortex-r .hamburger-inner::before,
+  .hamburger--vortex-r .hamburger-inner::after {
+    transition-duration: 0s;
+    transition-delay: 0.1s;
+    transition-timing-function: linear;
+  }
+  .hamburger--vortex-r .hamburger-inner::before {
+    transition-property: top, opacity;
+  }
+  .hamburger--vortex-r .hamburger-inner::after {
+    transition-property: bottom, transform;
+    transition-property:
+      bottom,
+      transform;
+  }
+  .hamburger--vortex-r.is-active .hamburger-inner {
+    transform: rotate(-765deg);
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .hamburger--vortex-r.is-active .hamburger-inner::before,
+  .hamburger--vortex-r.is-active .hamburger-inner::after {
+    transition-delay: 0s;
+  }
+  .hamburger--vortex-r.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+  }
+  .hamburger--vortex-r.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+  }
+}
