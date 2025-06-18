@@ -1,20 +1,13 @@
 <script>
-import { ref } from 'vue'
-const anim = ref('fade')
+// import { ref } from 'vue'
+// const anim = ref('fade')
 </script>
 
 <template>
   <div class="layout">
     <Header />
-    <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/scene">Scene</router-link>
-      <router-link to="/composables/Transitions">Transitions</router-link>
-      <router-link to="/animations">Animations</router-link>
-    </nav>
-
     <main>
+
       <router-view v-slot="{ Component }">
         <Component :is="Component" />
       </router-view>

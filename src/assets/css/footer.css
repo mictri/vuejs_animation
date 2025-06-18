@@ -1,0 +1,71 @@
+/*=============================================
+	footer
+*=============================================*/
+footer {
+  background: #39434a;
+  color: #fff;
+  padding: 78px 0px 61px;
+}
+footer [class^=ft-] {
+  display: flex;
+  justify-content: space-between;
+}
+footer .ft-top {
+  padding: 0px 0px 0px;
+}
+footer .ft-bottom {
+  margin-top: 120px;
+  align-items: flex-end;
+}
+footer nav {
+  margin-top: 20px;
+}
+footer nav a + a {
+  margin-left: 60px;
+}
+footer .ft-tit {
+  font-size: 52px;
+  line-height: 1.1;
+  margin-top: 16px;
+}
+footer address {
+  font-size: 12px;
+  line-height: 1.9;
+}
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 40px 0px;
+  }
+  footer [class^=ft-] {
+    display: block;
+  }
+  footer .logo {
+    width: 183px;
+  }
+  footer nav {
+    margin-top: 40px;
+  }
+  footer nav a {
+    display: block;
+  }
+  footer nav a + a {
+    margin: 25px 0px 0px 0px;
+  }
+  footer .ft-tit {
+    font-size: 35px;
+    line-height: 1.08;
+    margin-top: 10px;
+  }
+  footer .ft-bottom {
+    margin-top: 60px;
+  }
+  footer address {
+    font-size: 11px;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 424px) {
+  footer .ft-tit {
+    font-size: 32px;
+  }
+}

@@ -23,11 +23,9 @@
     <div id="navbar">
       <nav>
         <router-link to="/" class="for-sp"><span>トップページ</span></router-link>
-        <router-link to="/company"><span>会社情報</span></router-link>
-        <router-link to="/service"><span>事業紹介</span></router-link>
-        <router-link to="/location"><span>拠点一覧</span></router-link>
-        <router-link to="/sustainability"><span>サスティナビリティ</span></router-link>
-        <router-link to="/recruit"><span>採用情報</span></router-link>
+        <router-link to="about">About</router-link>
+        <router-link to="animations">Animations</router-link>
+        <router-link to="scene">Scene</router-link>
       </nav>
 
       <div class="box-tel">

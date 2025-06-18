@@ -1,3 +1,9 @@
+html, div, span, h1, h2, h3, h4, h5, h6, p, a, address, em, span, strong, img, dl, dt, dd, ol, ul, li, form, label, table, caption, tbody, tfoot, thead, tr, th, td, hr, figure, figcaption, main, aside {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
 body {
   min-width: inherit;
   min-height: inherit;
@@ -269,4 +275,8 @@ a:hover {
   a:hover img {
     opacity: 0.7;
   }
+}
+
+.fnt-helvetica {
+    font-family: "Helvetica Neue", sans-serif;
 }

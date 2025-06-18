@@ -23,6 +23,8 @@ onMounted(() => {
       duration: 1,
       ease: 'power2.out',
     })
+
+    ScrollTrigger.refresh() // đảm bảo mọi thứ khớp vị trí
   }
 })
 </script>
