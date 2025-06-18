@@ -7,12 +7,11 @@
   <div class="layout">
     <Header />
     <main>
-
       <router-view v-slot="{ Component }">
         <Component :is="Component" />
       </router-view>
     </main>
-
+    <BannerContact />
     <Footer />
   </div>
 
@@ -37,4 +36,5 @@
 <script setup>
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
+import BannerContact from '@/components/PageContact.vue'
 </script>

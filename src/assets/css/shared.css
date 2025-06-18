@@ -1,8 +1,43 @@
-html, div, span, h1, h2, h3, h4, h5, h6, p, a, address, em, span, strong, img, dl, dt, dd, ol, ul, li, form, label, table, caption, tbody, tfoot, thead, tr, th, td, hr, figure, figcaption, main, aside {
+html,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+em,
+span,
+strong,
+img,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+hr,
+figure,
+figcaption,
+main,
+aside {
   font-size: inherit;
   line-height: inherit;
 }
-
 
 body {
   min-width: inherit;
@@ -278,5 +313,64 @@ a:hover {
 }
 
 .fnt-helvetica {
-    font-family: "Helvetica Neue", sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+/*=============================================
+	contact bottom
+*=============================================*/
+.contact-bottom {
+  background: #f6f6f6;
+  border-radius: 20px;
+  padding: 78px 0px 89px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 78px;
+}
+.contact-bottom .wrap {
+  max-width: 1140px;
+  display: flex;
+  align-items: center;
+}
+.contact-bottom h2 {
+  width: 340px;
+}
+.contact-bottom h2 span {
+  font-size: 60px;
+  display: block;
+}
+.contact-bottom h2 em {
+  margin-top: 7px;
+  display: block;
+}
+.contact-bottom .txt {
+  width: 355px;
+}
+.contact-bottom .btn-link {
+  width: 344px;
+  margin-left: 60px;
+}
+@media only screen and (max-width: 768px) {
+  .contact-bottom {
+    border-radius: 14px;
+    padding: 60px 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+  }
+  .contact-bottom .wrap {
+    flex-direction: column;
+  }
+  .contact-bottom h2 {
+    width: auto;
+  }
+  .contact-bottom .txt {
+    width: auto;
+    margin-top: 25px;
+  }
+  .contact-bottom .btn-link {
+    width: calc(100% - 36px);
+    max-width: 279px;
+    margin: 15px auto 0px;
+  }
 }

@@ -52,9 +52,11 @@
 <script setup>
 import '@/assets/css/header.css'
 import { ref, watch, onMounted, onBeforeUnmount } from 'vue'
+import { useRouter } from 'vue-router'
 
 const isActive = ref(false)
 const isMobile = ref(false)
+const router = useRouter()
 
 const checkMobile = () => {
   const mobile = window.matchMedia('(max-width: 767px)').matches
@@ -77,6 +79,11 @@ watch(isActive, (val) => {
   if (isMobile.value) {
     document.body.classList.toggle('nav--opened', val)
   }
+})
+
+// Xóa class khi chuyển trang
+router.afterEach(() => {
+  document.body.classList.remove('nav--opened')
 })
 
 onMounted(() => {
