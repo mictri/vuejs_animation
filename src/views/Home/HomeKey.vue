@@ -1,11 +1,14 @@
 <template>
-    <div id="key-box">
-        <div id="keyvisual">
-<div ref="bgRef" class="key-slider"></div>
-
-        </div><!-- /#keyvisual -->
-        <p class="key-txt"><small>限界を突破し、未来を創る。</small><span class="fnt-helvetica">BEYOND LIMITS. <br>CREATE THE FUTURE</span></p>
+  <div id="key-box">
+    <div id="keyvisual">
+      <div ref="bgRef" class="key-slider"></div>
     </div>
+    <!-- /#keyvisual -->
+    <p class="key-txt">
+      <small>限界を突破し、未来を創る。</small
+      ><span class="fnt-helvetica">BEYOND LIMITS. <br />CREATE THE FUTURE</span>
+    </p>
+  </div>
 </template>
 <script setup>
 import { onMounted, onBeforeUnmount, ref } from 'vue'
@@ -34,5 +37,3 @@ onBeforeUnmount(() => {
   cancelAnimationFrame(animationFrame)
 })
 </script>
-
-

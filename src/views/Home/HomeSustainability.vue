@@ -8,9 +8,11 @@
               <h2 class="ttl-style">
                 <span class="fnt-helvetica">SUSTAINABILITY</span><em>サステナビリティ</em>
               </h2>
-              <h3>持続可能な社会の実現へ。<br />未来へ繋がる物流サービスを</h3>
+              <h3>Lorem ipsum dolor</h3>
               <p class="txt">
-                日本陸送では自社だけでなく、お客様のビジネスや地域社会とともに成長することを目指しています。また物流サービスにおける環境負荷を軽減し、未来に向けて持続可能な社会の実現に貢献してまいります。
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur expedita deleniti
+                magnam quae iure sunt, natus provident temporibus adipisci aut in inventore eveniet
+                esse, nesciunt, laboriosam asperiores itaque maxime quidem.
               </p>
             </div>
             <div class="col-slider global-slide">

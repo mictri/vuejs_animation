@@ -8,9 +8,12 @@
               <h2 class="ttl-style">
                 <span class="fnt-helvetica">MISSTION</span><em>新着情報</em>
               </h2>
-              <h3>お客様からの信頼のために。<br />進化と挑戦を続けます</h3>
+              <h3>Lorem ipsum dolor sit amet</h3>
               <p class="txt">
-                ニッコンホールディングスグループの一員として、既存事業の進化だけでなく、新たな挑戦を続け「お客様の求める高付加価値サービス」を提供。多様化するニーズにお応えし、より一層信頼される企業を目指します。
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur expedita deleniti
+                magnam quae iure sunt, natus provident temporibus adipisci aut in inventore eveniet
+                esse, nesciunt, laboriosam asperiores itaque maxime quidem. Ea assumenda labore sunt
+                corrupti minima
               </p>
             </div>
             <!--gsap photo-->
