@@ -10,6 +10,7 @@ const routes = [
   { path: '/about', name: 'About', component: About },
   { path: '/animations', name: 'Animations', component: Animations },
   { path: '/scene', name: 'Scene', component: Scene },
+  { path: '/:catchAll(.*)', name: 'NotFound', component: () => import('@/views/NotFound.vue') },
 ]
 
 const router = createRouter({

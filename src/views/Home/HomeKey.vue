@@ -18,7 +18,7 @@ let posX = 0
 let animationFrame
 
 const scrollSpeed = 1
-const imgWidth = 1500 // chiều rộng ảnh, có thể điều chỉnh
+const imgWidth = 2500 // chiều rộng ảnh, có thể điều chỉnh
 
 const animateScroll = () => {
   posX -= scrollSpeed

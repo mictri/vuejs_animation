@@ -700,7 +700,6 @@
   transition: all 0.4s ease;
 }
 .gr-photo .photo-item img {
-  display: none;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100% !important;
@@ -783,6 +782,9 @@
     height: 300px;
     margin-top: 20px;
   }
+  .gr-numbers {
+    margin: 10px auto 40px;
+  }
 }
 
 /*sustainability*/
@@ -831,7 +833,6 @@
   transition: all 0.4s ease;
 }
 .su-photo .photo-item img {
-  display: none;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100% !important;
