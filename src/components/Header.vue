@@ -4,8 +4,8 @@
       <p class="logo">
         <router-link to="/">
           <picture>
-            <source media="(max-width:768px)" srcset="@/assets/images/logo_sp.png" />
-            <img src="@/assets/images/logo.png" width="350" height="70" alt="logo" />
+            <source media="(max-width:768px)" srcset="@/assets/images/logo.webp" />
+            <img src="@/assets/images/logo.webp" width="350" height="70" alt="logo" />
           </picture>
         </router-link>
       </p>
