@@ -72,11 +72,11 @@ export default {
   },
   setup() {
     const photoItems = ref([
-      { src: '/src/assets/images/index/mistion_img01.jpg', alt: 'Ảnh 1' },
-      { src: '/src/assets/images/index/mistion_img02.jpg', alt: 'Ảnh 2' },
-      { src: '/src/assets/images/index/mistion_img03.jpg', alt: 'Ảnh 3' },
-      { src: '/src/assets/images/index/mistion_img04.jpg', alt: 'Ảnh 4' },
-      { src: '/src/assets/images/index/mistion_img05.jpg', alt: 'Ảnh 5' },
+      { src: '../src/assets/images/index/mistion_img01.jpg', alt: 'Ảnh 1' },
+      { src: '../src/assets/images/index/mistion_img02.jpg', alt: 'Ảnh 2' },
+      { src: '../src/assets/images/index/mistion_img03.jpg', alt: 'Ảnh 3' },
+      { src: '../src/assets/images/index/mistion_img04.jpg', alt: 'Ảnh 4' },
+      { src: '../src/assets/images/index/mistion_img05.jpg', alt: 'Ảnh 5' },
     ])
 
     const numberItems = ref(['01', '02', '03', '04', '05'])
