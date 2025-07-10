@@ -77,13 +77,13 @@ export default {
   },
   setup() {
     const photoItems = ref([
-      { src: '@/assets/images/index/sustainability_img.jpg', alt: 'Ảnh 1' },
-      { src: '@/assets/images/index/sustainability_img01.jpg', alt: 'Ảnh 2' },
-      { src: '@/assets/images/index/sustainability_img02.jpg', alt: 'Ảnh 3' },
-      { src: '@/assets/images/index/sustainability_img03.jpg', alt: 'Ảnh 4' },
-      { src: '@/assets/images/index/sustainability_img04.jpg', alt: 'Ảnh 5' },
-      { src: '@/assets/images/index/sustainability_img05.jpg', alt: 'Ảnh 5' },
-      { src: '@/assets/images/index/sustainability_img06.jpg', alt: 'Ảnh 6' },
+      { src: '/src/assets/images/index/sustainability_img.jpg', alt: 'Ảnh 1' },
+      { src: '/src/assets/images/index/sustainability_img01.jpg', alt: 'Ảnh 2' },
+      { src: '/src/assets/images/index/sustainability_img02.jpg', alt: 'Ảnh 3' },
+      { src: '/src/assets/images/index/sustainability_img03.jpg', alt: 'Ảnh 4' },
+      { src: '/src/assets/images/index/sustainability_img04.jpg', alt: 'Ảnh 5' },
+      { src: '/src/assets/images/index/sustainability_img05.jpg', alt: 'Ảnh 5' },
+      { src: '/src/assets/images/index/sustainability_img06.jpg', alt: 'Ảnh 6' },
     ])
 
     const numberItems = ref(['01', '02', '03', '04', '05', '06'])
